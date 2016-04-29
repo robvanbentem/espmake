@@ -2,9 +2,10 @@ FROM ubuntu:16.04
 MAINTAINER Rob van Bentem
 
 RUN apt-get update
-RUN apt-get install -y make autoconf automake libtool gcc g++ gperf flex bison texinfo gawk ncurses-dev libexpat-dev python python-serial sed git unzip bash build-essential bzip2 vim wget libtool-bin
+RUN apt-get install -y make autoconf automake libtool gcc g++ gperf flex bison texinfo gawk ncurses-dev libexpat-dev python python-serial sed git unzip bash build-essential bzip2 vim wget libtool-bin screen sudo
 
 RUN useradd -ms /bin/bash esp
+RUN echo "esp ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER esp
 WORKDIR /home/esp
