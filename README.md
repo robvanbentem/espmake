@@ -8,7 +8,7 @@ ESP8266 buildbox based on Ubuntu 16.04 with the esp-open-sdk toolchain and the S
 
 First build the docker container: `docker build -t espmake .`
 
-Once the container has been built, run it: ``docker run -v `pwd`:/home/esp/build -ti esp /bin/zsh``
+Once the container has been built, run it: ``docker run -v `pwd`:/home/esp/build -ti espmake /bin/zsh``
 
 The ``-v `pwd`:/home/esp/build`` argument mounts your current working directory (the directory you're currently in) to the ~/build dir on the container.
 
@@ -30,7 +30,7 @@ $ sudo docker build -t espmake . #building can take 10-60 minutes depending on y
 
 $ cd <your project path>
 
-$ sudo docker run -v `pwd`:/home/esp/build -ti esp /bin/zsh
+$ sudo docker run -v `pwd`:/home/esp/build -ti espmake /bin/zsh
 
 $ make
 ```
