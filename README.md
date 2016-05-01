@@ -2,7 +2,7 @@
 
 #### Into
 
-ESP8266 buildbox based on Ubuntu 16.04 with the esp-open-sdk toolchain. See https://github.com/pfalcon/esp-open-sdk for more info.
+ESP8266 buildbox based on Ubuntu 16.04 with the esp-open-sdk toolchain and the Sming framework. See https://github.com/pfalcon/esp-open-sdk and https://github.com/SmingHub/Sming for more info.
 
 #### How to build and run
 
